@@ -3,14 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Ask Her Out</title>
-	<link rel="stylesheet" href="./style.css">
+  <title>Ask Her Out</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 300px;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .message-button {
+      background-color: #0077b5; /* Instagram blue */
+    }
+
+    .message-button:hover {
+      background-color: #006897; /* Instagram blue on hover */
+    }
+  </style>
 </head>
 <body>
-	<div class="container">
-	  <div class="tenor-gif-embed" data-postid="9871689840695956721" data-share-method="host" data-aspect-ratio="0.975904" data-width="100%"><a href="https://tenor.com/view/peluk-gif-9871689840695956721">Peluk GIF</a>from <a href="https://tenor.com/search/peluk-gifs">Peluk GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-	  <h1>Hehehehe, I knew it! 😘</h1>
-	  
-	</div>
+  <div class="container">
+    <!-- GIF from Tenor -->
+    <div class="tenor-gif-embed" data-postid="9871689840695956721" data-share-method="host" data-aspect-ratio="0.975904" data-width="100%">
+      <a href="https://tenor.com/view/peluk-gif-9871689840695956721">Peluk GIF</a> from <a href="https://tenor.com/search/peluk-gifs">Peluk GIFs</a>
+    </div>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    
+    <h1>Hehehehe <br> I knew it! 😘</h1>
+    
+    <!-- New Button: Baaki sab discuss kar len -->
+    <button class="message-button" onclick="redirectToInstagram()">Chalo phir idhar aao ab 😁</button>
+  </div>
+
+  <script>
+    function redirectToInstagram() {
+      // Replace 'your-username' with your actual Instagram username
+      var instagramURL = "https://wa.me/7579393332?text=Hey!%0AFrom%20the%20moment%20we%20started%20talking,%20I%20couldn't%20shake%20the%20feeling%20that%20something%20special%20is%20about%20to%20unfold.%20I'm%20really%20looking%20forward%20to%20discovering%20all%20the%20little%20things%20that%20make%20you,%20you. 💖";
+      //?text=Hey!%20I%20want%20to%20discuss%20something"; 
+      
+      // Open Instagram's message window
+      window.open(instagramURL, "_blank");
+    }
+  </script>
+
 </body>
 </html>
